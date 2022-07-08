@@ -1,4 +1,4 @@
-#GRBL 28byj-48 + PWM Laser
+# GRBL 28byj-48 + PWM Laser
 
 This GRBL uses an ugly hack to control two motors unipolar steps as 28byj-48 and also supports a PWM Laser on pin 11
 
