@@ -11,3 +11,13 @@ Credits to peppe-catena who did support the PWM Laser: https://create.arduino.cc
 I tested the code with 328p (Arduino Pro Mini), not with 2560 (Arduino Mega) because I do not have a 2560 to test the alterations in the file cpu_map_atmega2560.h
 
 Possibly more alterations and tweaks to come.
+
+## To Build:
+1) Download the Repo zip file.
+2) Unzip
+3) Load up grbl/examples/grblUpload/grblUpload.ino into the Arduino IDE
+4) Go to Sketch -> Include Library -> Add .ZIP Library
+5) Choose the grbl directory from this repo you uzipped earlier.
+6) Choose your board, port, and method of upload (ex Arduino Pro Mini, ATMega328p (5v, 16MHz), COM5, AVR ISP)
+7) Upload
+8) See peppe-catena's post on wiring diagram.
