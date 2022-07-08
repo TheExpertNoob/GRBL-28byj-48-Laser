@@ -28,8 +28,8 @@
 #define defaults_h
 
   // Grbl generic default settings. Should work across different machines.
-  #define DEFAULT_X_STEPS_PER_MM 250.0
-  #define DEFAULT_Y_STEPS_PER_MM 250.0
+  #define DEFAULT_X_STEPS_PER_MM 100.0
+  #define DEFAULT_Y_STEPS_PER_MM 100.0
   #define DEFAULT_Z_STEPS_PER_MM 250.0
   #define DEFAULT_X_MAX_RATE 500.0 // mm/min
   #define DEFAULT_Y_MAX_RATE 500.0 // mm/min
