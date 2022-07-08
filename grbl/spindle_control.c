@@ -27,8 +27,8 @@
 
 #include "grbl.h"
 
-#define RC_SERVO_SHORT     15       // Timer ticks for 0.6ms pulse duration  (9 for 0.6ms)
-#define RC_SERVO_LONG      32       // Timer ticks for 2.5 ms pulse duration  (39 for 2.5ms)     
+#define RC_SERVO_SHORT     0       // Timer ticks for 0.6ms pulse duration  (9 for 0.6ms)
+#define RC_SERVO_LONG      255       // Timer ticks for 2.5 ms pulse duration  (39 for 2.5ms)     
 //#define RC_SERVO_INVERT     1     // Uncomment to invert servo direction
 
 
@@ -98,7 +98,8 @@ void spindle_run(uint8_t direction, float rpm)
         uint16_t current_pwm;
 	  #else
         TCCRA_REGISTER = (1<<COMB_BIT) | (1<<WAVE1_REGISTER) | (1<<WAVE0_REGISTER);
-        TCCRB_REGISTER = (TCCRB_REGISTER & 0b11111000) | 0x07; // set to 1/1024 Prescaler
+        // TCCRB_REGISTER = (TCCRB_REGISTER & 0b11111000) | 0x07; // set to 1/1024 Prescaler
+	  TCCRB_REGISTER = (TCCRB_REGISTER & 0b11111000) | 0x04; // set to 1/1024 Prescaler
 	    uint8_t current_pwm;
 	  #endif
 
