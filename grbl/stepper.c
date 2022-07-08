@@ -189,7 +189,7 @@ void st_wake_up()
 
   if (sys.state & (STATE_CYCLE | STATE_HOMING)){
     // Initialize stepper output bits
-    st.dir_outbits = dir_port_invert_mask; 
+    // st.dir_outbits = dir_port_invert_mask; 
     st.step_outbits = step_port_invert_mask;
     
     // Initialize step pulse timing from settings. Here to ensure updating after re-writing.
